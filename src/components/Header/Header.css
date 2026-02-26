@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #fff;
+  height: 100px;
+  border-bottom: 1px solid #333333;
+  position: relative;
+}
+
+.nav__logo {
+  width: 117px;
+  height: 90px;
+  align-self: center;
+  margin: 0 0 0 50px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 60px;
+  list-style-type: none;
+  align-items: center;
+  padding: 0 50px 0 0;
+  font-size: 16px;
+}
+
+.nav__link {
+  font-family: "Inter";
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__link:hover {
+  color: #8d8d8d;
+}
+
+.nav__button {
+  width: 194px;
+  height: 38px;
+  background-color: #2b2c2b;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid #8d8d8d;
+}
+
+/* BOTÃO BURGER */
+.nav__toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.nav__bar {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 7px auto;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__logo {
+    margin: 0 0 0 30px;
+  }
+
+  .nav__links {
+    padding: 0 10px 0 0;
+    column-gap: 40px;
+    font-size: 12px;
+  }
+
+  .nav__button {
+    width: 150px;
+    height: 38px;
+    background-color: #2b2c2b;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #8d8d8d;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .nav__logo {
+    margin: 0 0 0 30px;
+  }
+  .nav__toggle {
+    display: block;
+    align-self: center;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    right: 16px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #333333;
+
+    z-index: 5;
+  }
+
+  .nav.nav--open .nav__links {
+    display: flex;
+  }
+
+  .nav.nav--open .nav__bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .nav.nav--open .nav__bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav.nav--open .nav__bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+}
