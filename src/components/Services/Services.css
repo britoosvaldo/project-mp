@@ -114,7 +114,7 @@
   }
 }
 
-.card__icon {
+.services-card__icon {
   width: 45px;
   height: 45px;
   margin: 0 0;
@@ -123,14 +123,14 @@
   top: 20px;
 }
 
-.card__title {
+.services-card__title {
   font-size: 20px;
   position: relative;
   left: 20px;
   top: 35px;
 }
 
-.card__description {
+.services-card__description {
   width: 307px;
   font-size: 16px;
   position: relative;
