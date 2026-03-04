@@ -1,0 +1,95 @@
+.footer {
+  height: 100%;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Inter";
+  align-items: center;
+}
+
+.footer__logo {
+  justify-content: end;
+  width: 116px;
+  height: 30px;
+  margin: 20px;
+}
+
+.footer__description {
+  margin: 10px;
+  font-size: 15px;
+  color: #9a9797;
+  font-family: "Saira";
+}
+
+.footer__socialNetwork {
+  width: 112px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__git-icon:hover .icon--white {
+  opacity: 0;
+}
+
+.footer__git-icon:hover .icon--orange {
+  opacity: 1;
+}
+
+.footer__linkedin-icon:hover .icon--white {
+  opacity: 0;
+}
+
+.footer__linkedin-icon:hover .icon--orange {
+  opacity: 1;
+}
+
+.footer__insta-icon:hover .icon--white {
+  opacity: 0;
+}
+
+.footer__insta-icon:hover .icon--orange {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    gap: 80px;
+  }
+
+  .footer__socialNetwork {
+    margin: 0 20px 0 0;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 20px;
+    grid-template-areas:
+      "logo social"
+      "copyright copyright";
+  }
+
+  .footer__logo {
+    grid-area: logo;
+
+    align-items: center;
+  }
+
+  .footer__description {
+    grid-area: copyright;
+    justify-self: center;
+    width: 280px;
+    align-items: center;
+  }
+
+  .footer__socialNetwork {
+    grid-area: social;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,261 @@
+.projects {
+  height: 750px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-projects {
+  color: #ff8230;
+  margin: 50px 0 0 0;
+  align-self: center;
+  font-family: "Saira";
+}
+
+.projects__title {
+  align-self: center;
+  font-size: 35px;
+  font-family: "Roboto";
+}
+
+.projects__title span {
+  color: #ff8230;
+}
+
+.projects__grid {
+  margin: 30px 0 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__card {
+  width: 300px;
+  height: 200px;
+  border: 0.5px solid #717070;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira";
+}
+
+.projects__card:hover {
+  transform: translateY(-5px);
+  border-color: #ff8230;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 130, 48, 0.4),
+    0 0 20px rgba(255, 130, 48, 0.25);
+}
+
+.github__link:hover .icon--white {
+  opacity: 0;
+}
+
+.github__link:hover .icon--orange {
+  opacity: 1;
+}
+
+.card__icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 0;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+
+.github__link {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 260px;
+  top: -20px;
+  cursor: pointer;
+}
+
+.github__link:hover .icon--white {
+  opacity: 0;
+}
+
+.github__link:hover .icon--orange {
+  opacity: 1;
+}
+
+.site__link {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 230px;
+  top: -35px;
+  cursor: pointer;
+}
+
+.site__link:hover .icon--white {
+  opacity: 0;
+}
+
+.site__link:hover .icon--orange {
+  opacity: 1;
+}
+
+.site__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.site__title {
+  margin: 10px 0 0 15px;
+  font-size: 18px;
+}
+
+.site__description {
+  margin: 10px 15px 0 15px;
+  font-size: 14px;
+  color: #9a9797;
+}
+
+.site__techs {
+  margin: auto;
+  font-size: 10px;
+  color: #9a9797;
+}
+
+.projects__link-text {
+  width: 190px;
+  align-self: center;
+  color: #9a9797;
+  font-family: "Saira";
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.projects__link-text:hover {
+  color: #ff8230;
+}
+
+.projects__link {
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__link:hover .icon--white {
+  opacity: 0;
+}
+
+.projects__link:hover .icon--orange {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    height: 960px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+  }
+
+  .site__title {
+    margin: 10px 0 0 15px;
+    font-size: 16px;
+  }
+
+  .site__description {
+    margin: 10px 15px 0 15px;
+    font-size: 13px;
+    color: #9a9797;
+  }
+
+  .site__techs {
+    margin: auto;
+    font-size: 10px;
+    color: #9a9797;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projects {
+    min-height: 1480px;
+  }
+
+  .my-projects {
+    font-size: 12px;
+  }
+
+  .projects__title {
+    font-size: 32px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(1, 258px);
+    grid-template-rows: repeat(6, 180px);
+    gap: 20px;
+  }
+
+  .projects__card {
+    width: 258px;
+    height: 180px;
+  }
+
+  .card__icon {
+    width: 30px;
+    height: 30px;
+    left: 20px;
+  }
+
+  .github__link {
+    left: 225px;
+    top: -10px;
+  }
+
+  .site__link {
+    left: 195px;
+    top: -25px;
+  }
+
+  .site__title {
+    margin: 10px 0 0 20px;
+    font-size: 14px;
+  }
+
+  .site__description {
+    margin: 20px 15px 0 20px;
+    font-size: 10px;
+  }
+
+  .site__techs {
+    margin: auto;
+    font-size: 10px;
+    color: #9a9797;
+  }
+
+  .projects__link {
+    align-self: center;
+    margin: 0;
+    color: #9a9797;
+    font-family: "Saira";
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .projects__link-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0 0 0 10px;
+  }
+}

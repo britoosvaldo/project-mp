@@ -1,0 +1,222 @@
+.contacts {
+  height: 100%;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__talk {
+  font-family: "Saira";
+  color: #ff8230;
+  margin: 50px 0 0 0;
+  align-self: center;
+}
+
+.contacts__title {
+  align-self: center;
+  font-size: 35px;
+  font-family: "Roboto";
+}
+
+.contacts__title span {
+  color: #ff8230;
+}
+
+.contacts__grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 60px;
+  padding-bottom: 40px;
+}
+
+.contacts__subtitle {
+  font-family: "Saira";
+  font-size: 24px;
+}
+
+.contacts__description {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__contacts {
+  display: flex;
+  gap: 15px;
+}
+
+.contacts__mail {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__mail span {
+  color: #ffffff;
+}
+
+.contacts__location {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__location span {
+  color: #ffffff;
+}
+
+.contacts__follow {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contacts__links .contacts__social {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #9a9797;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__form {
+  border: 1px solid #717070;
+  border-radius: 10px;
+  width: 400px;
+  height: 450px;
+  font-family: "Inter";
+}
+
+.form__description {
+  margin: 30px 0 0 30px;
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.contacts__name,
+.contacts__email {
+  margin: 10px 0 0 30px;
+  background-color: #000000;
+  width: 320px;
+  height: 42px;
+  border-radius: 10px;
+  border: 0.5px solid #9a9797;
+  padding: 0 0 0 15px;
+  color: #ffffff;
+}
+
+.contacts__mensage {
+  margin: 10px 0 0 30px;
+  background-color: #000000;
+  width: 320px;
+  height: 100px;
+  border-radius: 10px;
+  border: 0.5px solid #9a9797;
+  padding: 10px 0 0 15px;
+  resize: none;
+  color: #ffffff;
+}
+
+.contacts__btn {
+  background-color: #ff8230;
+  color: #ffffff;
+  margin: 15px 0 0 30px;
+  width: 338px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contacts__btn-icon {
+  padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts__grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contacts__talk {
+    font-size: 12px;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+  }
+
+  .contacts__grid {
+    grid-template-columns: 250px;
+    gap: 40px;
+  }
+
+  .contacts__subtitle {
+    font-size: 16px;
+  }
+
+  .contacts__description {
+    font-size: 11px;
+  }
+
+  .contacts__contacts {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+  }
+
+  .contacts__follow {
+    font-size: 14px;
+  }
+
+  .contacts__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contacts__social {
+    border: 1px solid #1c1c1c;
+  }
+
+  .contacts__form {
+    width: 250px;
+    height: 390px;
+  }
+
+  .form__description {
+    margin: 20px 0 0 20px;
+    font-size: 12px;
+  }
+
+  .contacts__name,
+  .contacts__email {
+    margin: 10px 0 0 30px;
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .contacts__mensage {
+    margin: 10px 0 0 30px;
+    width: 170px;
+    font-size: 12px;
+  }
+
+  .contacts__btn {
+    width: 190px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
