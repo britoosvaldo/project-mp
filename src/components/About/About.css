@@ -27,15 +27,19 @@
 .about__grid {
   margin: 30px 0 0 0;
   display: grid;
-  grid-template-columns: repeat(2, 500px);
+  grid-template-columns: repeat(2, 540px);
   grid-template-rows: repeat(3, 140px);
-  gap: 20px;
+  gap: 10px 40px;
   justify-content: center;
   align-items: center;
   grid-template-areas:
+    "title card"
     "description card"
-    "description card"
-    "description card";
+    "list card";
+}
+
+.about__grid-title {
+  grid-area: title;
 }
 
 .about__description {
@@ -43,6 +47,25 @@
   grid-area: description;
   font-size: 18px;
   color: #9a9797;
+  margin: 0 0 30px 0;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-area: list;
+  padding: 0;
+  gap: 10px;
+}
+
+.about__list-elements {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.about__list-icon {
+  padding: 0 10px 0 0;
+  vertical-align: middle;
 }
 
 .about__card {
@@ -52,9 +75,6 @@
   border-radius: 10px;
   background-color: #1f1f1f;
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Roboto";
 }
 
@@ -63,93 +83,61 @@
   border-color: #ffffff;
 }
 
-.about__icon {
-  width: 24px;
-  height: 24px;
-  margin: 10px 0 0 0;
+.about-card__icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 30px;
+  top: 45px;
 }
 
-.card__title {
-  text-align: center;
-  margin: 15px 0px;
-  font-size: 16px;
+.about-card__title {
+  width: 75px;
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+  top: -35px;
 }
 
-.card__subtitle {
-  text-align: center;
-  margin: 0;
+.about-card__subtitle {
+  width: 430px;
+  position: relative;
+  left: 100px;
+  top: -35px;
   font-size: 14px;
   color: #9a9797;
 }
 
-.about__tech {
-  margin: 50px 0 20px 0;
+.about__informations {
+  width: 1080px;
+  height: 100px;
+  margin: 70px 0;
   align-self: center;
-  font-family: "Saira";
-}
-
-.about__skills-wrapper {
-  width: 900px;
-  max-width: 90%;
-  margin: 20px auto 0;
-}
-
-.about__skills-marquee {
-  width: 600px;
-  justify-self: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.about__skills-track {
+  border: 1px solid #717070;
+  border-radius: 10px;
+  background-color: #1f1f1f;
   display: flex;
-  gap: 40px;
-  width: max-content;
-  animation: marquee 25s linear infinite;
-  will-change: transform;
+  gap: 200px;
+  justify-content: center;
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.informations {
+  width: 150px;
+  gap: 10px 20px;
+  justify-content: center;
+  align-content: center;
 }
 
-.about__skill {
-  display: inline-flex;
-  align-items: center;
-  height: 25px;
-  padding: 0 12px;
-  border: 0.5px solid #717070;
-  border-radius: 100px;
-  font-size: 13px;
-  font-family: "Saira";
-  background-color: #262626;
-  white-space: nowrap;
+.informations-number {
+  margin: 0;
+  font-size: 32px;
+  justify-self: center;
 }
 
-.about__skills-marquee::before,
-.about__skills-marquee::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.about__skills-marquee::before {
-  left: 0;
-  background: linear-gradient(to right, #1c1c1c, transparent);
-}
-
-.about__skills-marquee::after {
-  right: 0;
-  background: linear-gradient(to left, #1c1c1c, transparent);
+.informations-text {
+  margin: 0;
+  font-size: 16px;
+  justify-self: center;
 }
 
 @media screen and (max-width: 1024px) {
