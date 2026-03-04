@@ -1,61 +1,103 @@
+import line from "../../images/line.svg";
+
 export default function Projects() {
   return (
     <section className="projects" id="projects">
-      <p className="my-projects reveal">// meus projetos</p>
-
-      <h2 className="projects__title reveal">
-        Trabalhos <span>recentes</span>
-      </h2>
-
-      <div className="projects__grid reveal-group">
-        <div className="projects__card reveal">
-          <img className="card__icon" src="" />
-          <a
-            className="github__link"
-            href="https://github.com/britoosvaldo/web_project_api_full"
-          ></a>
-
-          <h3 className="site__title">Around the USA</h3>
-          <p className="site__description">
-            Rede Social que permite aos usuários compartilhar fotos, editar seu
-            perfil, curtir e deletar publicações. (TripleTen)
-          </p>
-          <p className="site__techs">
-            HTML / CSS / JavaScript / React / Node.js / MongoDB
-          </p>
-        </div>
-
-        <div className="projects__card reveal">
-          <img className="card__icon" src="" />
-          <a
-            className="github__link"
-            href="https://github.com/britoosvaldo/web-news-frontend"
-          ></a>
-
-          <h3 className="site__title">Web News</h3>
-          <p className="site__description">
-            Site de pesquisa de notícias, onde o usuário, após ter feito
-            registro e login, pode salvar em sua conta as notícias de seu
-            interesse. (TripleTen)
-          </p>
-          <p className="site__techs">
-            HTML / CSS / JavaScript / React / Node.js / MongoDB
-          </p>
-        </div>
-
-        <div className="projects__card reveal"></div>
-        <div className="projects__card reveal"></div>
-        <div className="projects__card reveal"></div>
-        <div className="projects__card reveal"></div>
+      <div className="projects__start">
+        <img className="projects__line reveal" src={line} alt="" />
+        <h2 className="projects__title reveal">NOSSOS PROJETOS</h2>
+        <img className="projects__line reveal" src={line} alt="" />
       </div>
 
-      <div className="projects__link reveal">
-        <a
-          href="https://github.com/britoosvaldo?tab=repositories"
-          className="projects__link-text"
-        >
-          Veja mais no GitHub
-        </a>
+      <p className="projects__subtitle reveal">
+        Conheça alguns de nossos projetos realizados. Cada obra é única e
+        reflete nosso compromisso com excelência, transparência e satisfação do
+        cliente.
+      </p>
+
+      <div className="masonry__container reveal">
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1031/400/600" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Reforma</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/122/400/300" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Pintura</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/192/400/550" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Design</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/164/400/400" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Engenharia</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1040/400/700" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Acabamento</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1022/400/350" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Consultoria</span>
+          </div>
+        </div>
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1031/400/600" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Reforma</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/122/400/300" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Pintura</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/192/400/550" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Design</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/164/400/400" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Engenharia</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1040/400/700" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Acabamento</span>
+          </div>
+        </div>
+
+        <div className="masonry__item">
+          <img src="https://picsum.photos/id/1022/400/350" alt="Projeto" />
+          <div className="masonry__overlay">
+            <span>Consultoria</span>
+          </div>
+        </div>
       </div>
     </section>
   );
