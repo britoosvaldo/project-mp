@@ -1,49 +1,70 @@
+import line from "../../images/line.svg";
+import phoneIcon from "../../images/phone-icon.svg";
+import mailIcon from "../../images/mail-icon.svg";
+import locationIcon from "../../images/location-icon.svg";
+import clockIcon from "../../images/clock-icon.svg";
+import whatsIconBlack from "../../images/whatsapp-icon-black.svg";
+
 export default function Contacts() {
   return (
     <section className="contacts" id="contacts">
-      <p className="contacts__talk reveal" style={{ "--delay": "0ms" }}>
-        // fale comigo
+      <div className="contacts__start">
+        <img className="contacts__line" src={line} alt="" />
+        <h2 className="contacts__title">ENTRE EM CONTATO</h2>
+        <img className="contacts__line" src={line} alt="" />
+      </div>
+
+      <p className="contacts__subtitle">
+        Pronto para começar seu projeto? Entre em contato conosco para um
+        orçamento sem compromisso ou para tirar suas dúvidas.
       </p>
 
-      <h2 className="contacts__title reveal" style={{ "--delay": "80ms" }}>
-        Entre em <span>contato</span>
-      </h2>
-
       <div className="contacts__grid">
-        {/* 👇 bloco da esquerda */}
-        <div
-          className="contacts__information reveal"
-          style={{ "--delay": "160ms" }}
-        >
-          <h3 className="contacts__subtitle">
-            Vamos criar algo incrível juntos?
-          </h3>
-
-          <p className="contacts__description">
-            Estou sempre pronto para aprender e realizar novos projetos. Se você
-            tem uma ideia ou precisa de ajuda com seu projeto, entre em contato!
-          </p>
+        <div className="contacts__information reveal">
+          <p className="contacts__description">Informações de Contato</p>
 
           <div className="contacts__contacts">
-            <img src="" alt="E-mail Icon" />
-            <p className="contacts__mail">
-              E-mail <br />
-              <span>osvaldobrito.dev@gmail.com</span>
+            <img src={phoneIcon} alt="Phone Icon" />
+            <p className="contacts__phone">
+              Telefone <br />
+              <span>(95) 99999-9999</span>
             </p>
           </div>
 
           <div className="contacts__contacts">
-            <img src="" alt="Location Icon" />
-            <p className="contacts__location">
-              Localização <br />
-              <span>Roraima, Brasil</span>
+            <img src={mailIcon} alt="E-mail Icon" />
+            <p className="contacts__mail">
+              E-mail <br />
+              <span>contato@mpengenharia.com</span>
+            </p>
+          </div>
+
+          <div className="contacts__contacts">
+            <img src={locationIcon} alt="Location Icon" />
+            <p className="contacts__adress">
+              Endereço <br />
+              <span>
+                Rua Embaúba, 1000 - Paraviana <br />
+                Boa Vista - RR, 69300-000
+              </span>
+            </p>
+          </div>
+
+          <div className="contacts__contacts">
+            <img src={clockIcon} alt="Location Icon" />
+            <p className="contacts__hour">
+              Horário de Atendimento <br />
+              <span>
+                Segunda a Sexta: 08h às 18h <br />
+                Sábado: 08h às 12h
+              </span>
             </p>
           </div>
         </div>
 
-        {/* 👇 formulário entra depois */}
-        <div className="contacts__box reveal" style={{ "--delay": "240ms" }}>
+        <div className="contacts__box reveal">
           <form className="contacts__form">
+            <h2 className="contacts__form-title">Solicite um Orçamento</h2>
             <h3 className="form__description">Nome</h3>
             <input
               className="contacts__name"
@@ -51,22 +72,22 @@ export default function Contacts() {
               placeholder="Seu nome"
             />
 
-            <h3 className="form__description">E-mail</h3>
+            <h3 className="form__description">Telefone</h3>
             <input
               className="contacts__email"
               type="text"
-              placeholder="seu@email.com"
+              placeholder="(95) 99999-9999"
             />
 
             <h3 className="form__description">Mensagem</h3>
             <textarea
               className="contacts__mensage"
-              placeholder="Conte-me sobre o seu projeto..."
+              placeholder="Descreva seu projeto ou dúvida..."
             />
 
             <button className="contacts__btn">
               Enviar Mensagem
-              <img className="contacts__btn-icon" src="" />
+              <img className="contacts__btn-icon" src={whatsIconBlack} />
             </button>
           </form>
         </div>

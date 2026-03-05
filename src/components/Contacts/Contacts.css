@@ -1,49 +1,63 @@
 .contacts {
   height: 100%;
-  background-color: #1c1c1c;
+  background-color: #171717;
   color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
-.contacts__talk {
-  font-family: "Saira";
-  color: #ff8230;
-  margin: 50px 0 0 0;
-  align-self: center;
+.contacts__start {
+  margin: 30px 0;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+
+.contacts__line {
+  width: 300px;
 }
 
 .contacts__title {
   align-self: center;
   font-size: 35px;
-  font-family: "Roboto";
+  font-weight: 400;
 }
 
-.contacts__title span {
-  color: #ff8230;
+.contacts__subtitle {
+  width: 610px;
+  text-align: center;
+  align-self: center;
+  font-size: 16px;
+  margin: 0 0 30px 0;
 }
 
 .contacts__grid {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  gap: 60px;
+  gap: 30px;
   padding-bottom: 40px;
-}
-
-.contacts__subtitle {
-  font-family: "Saira";
-  font-size: 24px;
 }
 
 .contacts__description {
   font-family: "Inter";
-  color: #9a9797;
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .contacts__contacts {
   display: flex;
   gap: 15px;
+}
+
+.contacts__phone {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__phone span {
+  font-family: "Inter";
+  color: #ffffff;
 }
 
 .contacts__mail {
@@ -55,12 +69,21 @@
   color: #ffffff;
 }
 
-.contacts__location {
+.contacts__adress {
   font-family: "Inter";
   color: #9a9797;
 }
 
-.contacts__location span {
+.contacts__adress span {
+  color: #ffffff;
+}
+
+.contacts__hour {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__hour span {
   color: #ffffff;
 }
 
@@ -88,9 +111,14 @@
 .contacts__form {
   border: 1px solid #717070;
   border-radius: 10px;
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 500px;
   font-family: "Inter";
+}
+
+.contacts__form-title {
+  margin: 30px 0 0 30px;
+  font-size: 24px;
 }
 
 .form__description {
@@ -103,7 +131,7 @@
 .contacts__email {
   margin: 10px 0 0 30px;
   background-color: #000000;
-  width: 320px;
+  width: 370px;
   height: 42px;
   border-radius: 10px;
   border: 0.5px solid #9a9797;
@@ -114,7 +142,7 @@
 .contacts__mensage {
   margin: 10px 0 0 30px;
   background-color: #000000;
-  width: 320px;
+  width: 370px;
   height: 100px;
   border-radius: 10px;
   border: 0.5px solid #9a9797;
@@ -124,10 +152,10 @@
 }
 
 .contacts__btn {
-  background-color: #ff8230;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   margin: 15px 0 0 30px;
-  width: 338px;
+  width: 388px;
   height: 42px;
   border-radius: 10px;
   cursor: pointer;

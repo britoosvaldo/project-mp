@@ -1,18 +1,11 @@
 .footer {
-  height: 100%;
+  height: 120px;
   background-color: #000000;
   color: #fff;
   display: flex;
   justify-content: space-around;
   font-family: "Inter";
   align-items: center;
-}
-
-.footer__logo {
-  justify-content: end;
-  width: 116px;
-  height: 30px;
-  margin: 20px;
 }
 
 .footer__description {
@@ -23,33 +16,35 @@
 }
 
 .footer__socialNetwork {
-  width: 112px;
+  width: 80px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__git-icon:hover .icon--white {
+.hover-icon {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.hover-icon .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-icon .icon--white {
   opacity: 0;
 }
 
-.footer__git-icon:hover .icon--orange {
+.hover-icon:hover .icon--white {
   opacity: 1;
 }
 
-.footer__linkedin-icon:hover .icon--white {
+.hover-icon:hover .icon--grey {
   opacity: 0;
-}
-
-.footer__linkedin-icon:hover .icon--orange {
-  opacity: 1;
-}
-
-.footer__insta-icon:hover .icon--white {
-  opacity: 0;
-}
-
-.footer__insta-icon:hover .icon--orange {
-  opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
