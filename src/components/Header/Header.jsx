@@ -1,12 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Adicionamos useEffect
 import mpLogo from "../../images/mp-logo.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="header">
-      <nav className={`nav ${isOpen ? "nav--open" : ""}`}>
+      <nav
+        className={`nav ${isOpen ? "nav--open" : ""} ${isScrolled ? "nav--scrolled" : ""}`}
+      >
         <img className="nav__logo" src={mpLogo} alt="Logo" />
 
         <button
@@ -28,7 +40,7 @@ export default function Header() {
               href="#home"
               onClick={() => setIsOpen(false)}
             >
-              Sobre
+              Início
             </a>
           </li>
           <li>
@@ -40,6 +52,16 @@ export default function Header() {
               Serviços
             </a>
           </li>
+          <li>
+            <a
+              className="nav__link"
+              href="#about"
+              onClick={() => setIsOpen(false)}
+            >
+              Sobre
+            </a>
+          </li>
+
           <li>
             <a
               className="nav__link"
@@ -60,7 +82,7 @@ export default function Header() {
           </li>
           <li>
             <button className="nav__link nav__button">
-              Solite um Orçamento
+              Solicite um Orçamento
             </button>
           </li>
         </ul>

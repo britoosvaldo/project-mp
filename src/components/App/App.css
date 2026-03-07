@@ -1,42 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.reveal {
+  opacity: 1;
+  transform: none;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+  transition-delay: var(--delay, 0ms);
+  will-change: opacity, transform;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal,
+  .js .reveal.is-visible {
+    transition: none;
+    transform: none;
+    opacity: 1;
   }
 }
 
-.card {
-  padding: 2em;
+/* === Cascade automático para grids (Projects) === */
+
+.js .reveal-group > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
 }
 
-.read-the-docs {
-  color: #888;
+.js .reveal-group > *.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* delay automático por posição */
+.reveal-group > *:nth-child(1) {
+  transition-delay: 0ms;
+}
+.reveal-group > *:nth-child(2) {
+  transition-delay: 80ms;
+}
+.reveal-group > *:nth-child(3) {
+  transition-delay: 160ms;
+}
+.reveal-group > *:nth-child(4) {
+  transition-delay: 240ms;
+}
+.reveal-group > *:nth-child(5) {
+  transition-delay: 320ms;
+}
+.reveal-group > *:nth-child(6) {
+  transition-delay: 400ms;
 }

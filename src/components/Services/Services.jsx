@@ -5,21 +5,24 @@ import rulerIcon from "../../images/ruler-icon.svg";
 import graphicIcon from "../../images/graphic-icon.svg";
 import buildIcon from "../../images/build-icon.svg";
 import hammerIcon from "../../images/hammer-icon.svg";
+import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 
 export default function Services() {
+  useRevealOnScroll();
+
   return (
     <section className="services" id="services">
-      <div className="services__start">
-        <img className="services__line reveal" src={line} />
-        <h2 className="services__title reveal">NOSSOS SERVIÇOS</h2>
-        <img className="services__line reveal" src={line} />
+      <div className="services__start reveal">
+        <img className="services__line" src={line} alt="linha" />
+        <h2 className="services__title">NOSSOS SERVIÇOS</h2>
+        <img className="services__line" src={line} alt="linha" />
       </div>
       <p className="services__subtitle reveal">
         Oferecemos soluções completas em engenharia civil, do projeto à entrega
         das chaves, com em qualidade, prazo e custo-benefício.
       </p>
 
-      <div className="services__grid reveal-group">
+      <div className="services__grid">
         <div className="services__card reveal">
           <img className="services-card__icon" src={helmetIcon} />
           <h3 className="services-card__title">Execução de Obras</h3>

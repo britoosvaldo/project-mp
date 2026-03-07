@@ -2,11 +2,14 @@ import buildingIcon from "../../images/building-icon.svg";
 import rulerIcon from "../../images/ruler-icon.svg";
 import shieldIcon from "../../images/shield-icon.svg";
 import arrowIcon from "../../images/arrow-icon.svg";
+import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 
 export default function Main() {
+  useRevealOnScroll();
+
   return (
-    <main className="main">
-      <h1 className="main__title">
+    <main className="main" id="home">
+      <h1 className="main__title " style={{ "--delay": "0ms" }}>
         Construindo o Futuro
         <br /> com Solidez
       </h1>

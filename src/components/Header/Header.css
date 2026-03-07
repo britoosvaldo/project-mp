@@ -3,13 +3,28 @@ html {
 }
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   background-color: #000000;
   color: #fff;
   height: 100px;
   border-bottom: 1px solid #333333;
-  position: relative;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0;
+}
+
+.nav.nav--scrolled {
+  top: 5px;
+  left: 5%;
+  width: 90%;
+  border-radius: 20px;
+  border: 1px solid #333333;
 }
 
 .nav__logo {
