@@ -139,32 +139,40 @@
   color: #8d8d8d;
 }
 
-@media screen and (max-width: 1024px) {
-  .projects {
-    height: 960px;
+@media screen and (max-width: 1150px) {
+  .services {
+    height: 1100px;
   }
 
-  .projects__grid {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(3, 200px);
-    gap: 20px;
+  .services__start {
+    margin: 30px 0;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
   }
 
-  .site__title {
-    margin: 10px 0 0 15px;
+  .services__line {
+    width: 300px;
+  }
+
+  .services__title {
+    align-self: center;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .services__subtitle {
+    width: 610px;
+    text-align: center;
+    align-self: center;
     font-size: 16px;
+    margin: 0 0 30px 0;
   }
 
-  .site__description {
-    margin: 10px 15px 0 15px;
-    font-size: 13px;
-    color: #9a9797;
-  }
-
-  .site__techs {
-    margin: auto;
-    font-size: 10px;
-    color: #9a9797;
+  .services__grid {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(3, 235px);
+    gap: 20px;
   }
 }
 
