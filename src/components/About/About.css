@@ -7,21 +7,21 @@
   padding-bottom: 20px;
 }
 
-.about__me {
-  font-family: "Saira";
-  color: #ff8230;
-  margin: 50px 0 0 0;
-  align-self: center;
+.about__start {
+  margin: 30px 0;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+
+.about__line {
+  width: 300px;
 }
 
 .about__title {
   align-self: center;
   font-size: 35px;
-  font-family: "Roboto";
-}
-
-.about__title span {
-  color: #ff8230;
+  font-weight: 400;
 }
 
 .about__grid {
@@ -140,105 +140,84 @@
   justify-self: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .about {
-    padding-bottom: 40px;
+    min-height: 900px;
+  }
+
+  .about__start {
+    margin: 50px 0 0 0;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__line {
+    width: 150px;
   }
 
   .about__grid {
     margin: 0;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(4, 140px);
+    grid-template-columns: repeat(1, 540px);
+    grid-template-rows: repeat(6, 140px);
     grid-template-areas:
-      "description description"
-      "description description"
-      "card card"
-      "card card";
-    gap: 10px;
+      "title"
+      "description"
+      "list"
+      "card"
+      "card"
+      "card";
+  }
+
+  .about__grid-title {
+    text-align: center;
+    grid-area: title;
   }
 
   .about__description {
     text-align: center;
+    grid-area: description;
   }
 
-  .about__title {
+  .about__list {
+    margin: auto;
+    grid-area: list;
+    gap: 10px 30px;
+  }
+
+  .about__informations {
+    width: 670px;
+    height: 100px;
+    margin: 70px 0;
     align-self: center;
+    border: 1px solid #717070;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+  }
+
+  .informations {
+    width: 150px;
+    gap: 10px 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .informations-number {
+    margin: 0;
     font-size: 32px;
-    font-family: "Roboto";
+    justify-self: center;
   }
 
-  .card__title {
-    text-align: center;
-    margin: 15px 0px;
-    font-size: 14px;
-  }
-
-  .card__subtitle {
-    text-align: center;
-    margin: 0 5px;
-    font-size: 12px;
-    color: #9a9797;
-  }
-
-  .about__skills-marquee {
-    width: 450px;
+  .informations-text {
+    margin: 0;
+    font-size: 16px;
+    justify-self: center;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .about__me {
-    font-size: 12px;
-  }
-
-  .about__description {
-    font-size: 12px;
-  }
-
-  .about__grid {
-    margin: 0;
-    grid-template-columns: repeat(2, 141px);
-    grid-template-rows: repeat(4, 100px);
-    grid-template-areas:
-      "description description"
-      "description description"
-      "card card"
-      "card card";
-  }
-
-  .about__card {
-    width: 140px;
-    height: 100px;
-  }
-
-  .about__icon {
-    width: 19px;
-    height: 19px;
-    margin: 10px 0 0 0;
-  }
-
-  .card__title {
-    margin: 10px 0px;
-    font-size: 12px;
-  }
-
-  .card__subtitle {
-    font-size: 9px;
-  }
-
-  .about__skills-marquee {
-    width: 300px;
-  }
-
-  .about__tech {
-    margin: 40px 0 20px 0;
-    font-size: 14px;
-  }
-
-  .about__skills-wrapper {
-    margin: 10px auto 0;
-  }
-
-  .about__skill {
-    font-size: 10px;
-  }
 }

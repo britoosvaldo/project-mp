@@ -7,10 +7,10 @@ import arrowList from "../../images/arrow-list.svg";
 export default function About() {
   return (
     <section className="about" id="about">
-      <div className="services__start">
-        <img className="services__line reveal" src={line} />
-        <h2 className="services__title reveal">SOBRE NÓS</h2>
-        <img className="services__line reveal" src={line} />
+      <div className="about__start">
+        <img className="about__line reveal" src={line} />
+        <h2 className="about__title reveal">SOBRE NÓS</h2>
+        <img className="about__line reveal" src={line} />
       </div>
 
       <div className="about__grid">

@@ -1,6 +1,7 @@
 .projects {
-  height: 1600px;
   background-color: #414141;
+  height: 750px;
+  font-family: "Roboto";
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -31,77 +32,46 @@
   margin: 0 0 30px 0;
 }
 
-.masonry__container {
-  column-count: 4;
-  column-gap: 10px;
-  margin: 50px 100px;
-}
-
-.masonry__container:hover .masonry__item {
-  opacity: 0.5;
-  filter: grayscale(0.3) brightness(0.8);
-  transition: all 0.4s ease;
-}
-
-.masonry__container .masonry__item:hover {
-  opacity: 1;
-  filter: grayscale(0) brightness(1);
-  transform: scale(1.05);
-  z-index: 10;
-}
-
-.masonry__item {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  overflow: hidden;
-  break-inside: avoid;
-  background-color: #333;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-.masonry__item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.6s ease;
-}
-
-.masonry__item:hover img {
-  transform: scale(1.1);
-}
-
-.masonry__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+.projects__carousel {
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  align-items: center;
+  gap: 30px;
+  height: 530px;
 }
 
-.masonry__item:hover .masonry__overlay {
-  opacity: 1;
+.projects__cards {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
-.masonry__overlay span {
-  color: white;
-  font-weight: bold;
+.projects__cards::-webkit-scrollbar {
+  display: none;
 }
 
-@media (max-width: 900px) {
-  .masonry__container {
-    column-count: 2;
-  }
+.projects__card {
+  width: 350px;
+  height: 350px;
+  background: #fefcf8;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 25px;
+  border: #000;
 }
 
-@media (max-width: 600px) {
-  .masonry__container {
-    column-count: 1;
-  }
+.projects__arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.projects__arrow:hover {
+  opacity: 0.7;
 }
