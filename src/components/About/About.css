@@ -74,7 +74,6 @@
   border: 0.5px solid #717070;
   border-radius: 10px;
   background-color: #1f1f1f;
-  transition: all 0.3s ease;
   font-family: "Roboto";
 }
 
@@ -188,6 +187,149 @@
 
   .about__informations {
     width: 670px;
+    height: 100px;
+    margin: 70px 0;
+    align-self: center;
+    border: 1px solid #717070;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+  }
+
+  .informations {
+    width: 150px;
+    gap: 10px 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .informations-number {
+    margin: 0;
+    font-size: 32px;
+    justify-self: center;
+  }
+
+  .informations-text {
+    margin: 0;
+    font-size: 16px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    height: 1120px;
+  }
+
+  .about__start {
+    margin: 30px 0 15px 0;
+    gap: 15px;
+  }
+
+  .about__title {
+    font-size: 20px;
+  }
+
+  .about__line {
+    width: 70px;
+  }
+
+  .about__grid {
+    margin: 0;
+    grid-template-columns: repeat(1, 315px);
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas:
+      "title"
+      "description"
+      "list"
+      "card"
+      "card"
+      "card";
+    gap: 20px;
+  }
+
+  .about__grid-title {
+    font-size: 18px;
+  }
+
+  .about__description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 5px;
+  }
+
+  .about__card {
+    justify-self: center;
+    width: 255px;
+    height: 110px;
+  }
+
+  .about-card__icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 15px;
+    top: 45px;
+  }
+
+  .about-card__title {
+    width: 50px;
+    font-size: 14px;
+    position: relative;
+    left: 65px;
+    top: -25px;
+  }
+
+  .about-card__subtitle {
+    width: 200px;
+    position: relative;
+    left: 65px;
+    top: -25px;
+    font-size: 10px;
+    color: #9a9797;
+  }
+
+  .about__informations {
+    width: 1080px;
+    height: 100px;
+    margin: 70px 0;
+    align-self: center;
+    border: 1px solid #717070;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+  }
+
+  .informations {
+    width: 150px;
+    gap: 10px 20px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .informations-number {
+    margin: 0;
+    font-size: 32px;
+    justify-self: center;
+  }
+
+  .informations-text {
+    margin: 0;
+    font-size: 16px;
+    justify-self: center;
+  }
+
+  .about__informations {
+    width: 255px;
     height: 100px;
     margin: 70px 0;
     align-self: center;

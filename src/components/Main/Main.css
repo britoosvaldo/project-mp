@@ -110,3 +110,77 @@
     gap: 120px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .main {
+    height: 540px;
+    padding: 200px 0 0 0;
+    font-family: "Roboto";
+  }
+
+  .main__title {
+    margin: 0 0 0 80px;
+    width: 262px;
+    font-size: 36px;
+  }
+
+  .main__description {
+    margin: 40px 0 0 80px;
+    width: 262px;
+    font-size: 14px;
+  }
+
+  .main__bt-budget {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 35px;
+    margin: 50px 0 0 0;
+    font-size: 12px;
+  }
+
+  .main__bt-projects {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 35px;
+    margin: 20px 0 0 0;
+    font-size: 12px;
+  }
+
+  .main__highlights {
+    gap: 50px;
+    margin: 60px 0 0 0;
+  }
+
+  .highlights {
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 35px);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "icon number"
+      "icon text";
+    gap: 5px 10px;
+    justify-content: center;
+  }
+
+  .highlights--icon {
+    grid-area: icon;
+    align-self: center;
+    width: 25px;
+  }
+
+  .highlights--number {
+    font-size: 16px;
+  }
+
+  .highlights--text {
+    font-size: 10px;
+    width: 100px;
+  }
+}
