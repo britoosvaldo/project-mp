@@ -117,12 +117,3 @@
     display: none;
   } /* Esconde as linhas em telas pequenas para poupar espaço */
 }
-
-@media (max-width: 600px) {
-  .projects__gallery {
-    column-count: 1;
-  }
-  .projects__subtitle {
-    width: 90%;
-  }
-}
