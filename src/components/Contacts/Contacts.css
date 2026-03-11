@@ -60,7 +60,9 @@
   color: #ffffff;
 }
 
-.contacts__mail {
+.contacts__mail,
+.contacts__adress,
+.contacts__hour {
   font-family: "Inter";
   color: #9a9797;
 }
@@ -69,18 +71,8 @@
   color: #ffffff;
 }
 
-.contacts__adress {
-  font-family: "Inter";
-  color: #9a9797;
-}
-
 .contacts__adress span {
   color: #ffffff;
-}
-
-.contacts__hour {
-  font-family: "Inter";
-  color: #9a9797;
 }
 
 .contacts__hour span {
@@ -165,14 +157,83 @@
   padding: 0 0 0 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
+  .contacts {
+    height: 100%;
+    background-color: #171717;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__start {
+    margin: 50px 0 0 0;
+  }
+
+  .contacts__line {
+    width: 150px;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+  }
+
   .contacts__grid {
     justify-content: center;
     display: grid;
-    grid-template-columns: 400px;
-    gap: 40px;
+    grid-template-columns: repeat(2, 300px);
+    gap: 15px;
+    padding-bottom: 40px;
   }
-}
 
-@media screen and (max-width: 650px) {
+  .contacts__description {
+    font-size: 18px;
+  }
+
+  .contacts__contacts {
+    font-size: 12px;
+  }
+
+  .contacts__form {
+    width: 300px;
+    height: 400px;
+  }
+
+  .contacts__form-title {
+    margin: 20px 0 0 20px;
+    font-size: 18px;
+  }
+
+  .form__description {
+    margin: 20px 0 0 20px;
+    font-size: 12px;
+  }
+
+  .contacts__name,
+  .contacts__email {
+    margin: 10px 0 0 20px;
+    width: 250px;
+    height: 34px;
+    font-size: 12px;
+    padding: 0 0 0 10px;
+  }
+
+  .contacts__mensage {
+    margin: 10px 0 0 20px;
+    width: 250px;
+    height: 70px;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
+  }
+
+  .contacts__btn {
+    margin: 15px 0 0 20px;
+    width: 265px;
+    height: 34px;
+    font-size: 12px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center;
+  }
 }
