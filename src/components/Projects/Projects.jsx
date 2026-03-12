@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { projectsData } from "../../data/projectsData.js";
-import useRevealOnScroll from "../../hooks/useRevealOnScroll"; // Ajuste o caminho conforme sua pasta
+import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 import line from "../../images/line.svg";
 
 export default function Projects() {
   const [visibleCount, setVisibleCount] = useState(4);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // Ativando o seu hook de scroll
   useRevealOnScroll({
     selector: ".reveal",
     once: true,
@@ -15,12 +14,10 @@ export default function Projects() {
 
   const handleShowMore = () => {
     setVisibleCount(20);
-    // Pequeno truque: como o Observer já rodou, os novos itens
-    // podem precisar de um "refresh" manual ou uma classe de entrada direta.
   };
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects__start reveal">
         <img className="projects__line" src={line} alt="linha" />
         <h2 className="projects__title">NOSSOS PROJETOS</h2>
@@ -36,8 +33,6 @@ export default function Projects() {
         {projectsData.slice(0, visibleCount).map((project, index) => (
           <div
             key={project.id}
-            // Se o index for maior que 7, significa que é uma foto nova.
-            // Se o Reveal não ativar, a classe 'is-visible-instant' garante que apareça.
             className={`projects__card ${index < 4 ? "reveal" : "reveal-new"}`}
             onClick={() => setSelectedProject(project)}
           >
@@ -58,7 +53,6 @@ export default function Projects() {
         </button>
       )}
 
-      {/* Modal / Lightbox (Opcional manter aqui) */}
       {selectedProject && (
         <div className="modal" onClick={() => setSelectedProject(null)}>
           <div className="modal__content" onClick={(e) => e.stopPropagation()}>

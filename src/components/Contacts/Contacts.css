@@ -237,7 +237,7 @@
     height: 34px;
     font-size: 12px;
     display: flex;
-    align-items: center; /* Alinha verticalmente no centro */
+    align-items: center;
     justify-content: center;
   }
 }

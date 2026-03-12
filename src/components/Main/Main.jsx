@@ -18,11 +18,23 @@ export default function Main() {
         projetos em realidade com compromisso, qualidade e resultados
         excepcionais.
       </p>
-      <button className="main__bt-budget">
-        SOLICITAR ORÇAMENTO
-        <img className="bt__icon" src={arrowIcon} />
-      </button>
-      <button className="main__bt-projects">VER PROJETOS</button>
+      <a
+        href="#contacts"
+        onClick={() => setIsOpen(false)}
+        style={{ textDecoration: "none" }}
+      >
+        <button className="main__bt-budget">
+          SOLICITAR ORÇAMENTO
+          <img className="bt__icon" src={arrowIcon} />
+        </button>
+      </a>
+      <a
+        href="#projects"
+        onClick={() => setIsOpen(false)}
+        style={{ textDecoration: "none" }}
+      >
+        <button className="main__bt-projects">VER PROJETOS</button>
+      </a>
       <div className="main__highlights">
         <div className="highlights">
           <img className="highlights--icon" src={buildingIcon} />

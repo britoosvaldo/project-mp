@@ -27,8 +27,6 @@
   }
 }
 
-/* === Cascade automático para grids (Projects) === */
-
 .js .reveal-group > * {
   opacity: 0;
   transform: translateY(18px);

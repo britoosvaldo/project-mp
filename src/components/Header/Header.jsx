@@ -55,20 +55,19 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#about"
-              onClick={() => setIsOpen(false)}
-            >
-              Sobre
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="nav__link"
               href="#projects"
               onClick={() => setIsOpen(false)}
             >
               Projetos
+            </a>
+          </li>
+          <li>
+            <a
+              className="nav__link"
+              href="#about"
+              onClick={() => setIsOpen(false)}
+            >
+              Sobre
             </a>
           </li>
           <li>
@@ -81,9 +80,15 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <button className="nav__link nav__button">
-              Solicite um Orçamento
-            </button>
+            <a
+              href="#contacts"
+              onClick={() => setIsOpen(false)}
+              style={{ textDecoration: "none" }}
+            >
+              <button className="nav__link nav__button">
+                Solicite um Orçamento
+              </button>
+            </a>
           </li>
         </ul>
       </nav>
