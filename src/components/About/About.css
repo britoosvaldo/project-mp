@@ -4,7 +4,8 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+
+  font-family: "Roboto";
 }
 
 .about__start {
@@ -22,6 +23,7 @@
   align-self: center;
   font-size: 35px;
   font-weight: 400;
+  font-family: "Saira";
 }
 
 .about__grid {
@@ -40,10 +42,10 @@
 
 .about__grid-title {
   grid-area: title;
+  font-size: 30px;
 }
 
 .about__description {
-  font-family: "Inter";
   grid-area: description;
   font-size: 18px;
   color: #9a9797;
@@ -110,7 +112,7 @@
 .about__informations {
   width: 1080px;
   height: 100px;
-  margin: 70px 0;
+  margin: 70px 0 100px 0;
   align-self: center;
   border: 1px solid #717070;
   border-radius: 10px;
@@ -131,6 +133,7 @@
   margin: 0;
   font-size: 32px;
   justify-self: center;
+  font-family: "Archivo Black";
 }
 
 .informations-text {
@@ -220,7 +223,7 @@
 
 @media screen and (max-width: 650px) {
   .about {
-    height: 1120px;
+    height: 970px;
   }
 
   .about__start {
@@ -247,28 +250,31 @@
       "card"
       "card"
       "card";
-    gap: 20px;
   }
 
   .about__grid-title {
     font-size: 18px;
+    margin-bottom: 70px;
   }
 
   .about__description {
     font-size: 12px;
     line-height: 1.6;
+    margin: 20px 0 50px 0;
   }
 
   .about__list {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 5px;
+    padding: 30px 0;
   }
 
   .about__card {
     justify-self: center;
     width: 255px;
-    height: 110px;
+    height: 100px;
+    margin-top: 80px;
   }
 
   .about-card__icon {
@@ -276,7 +282,7 @@
     height: 30px;
     position: relative;
     left: 15px;
-    top: 45px;
+    top: 35px;
   }
 
   .about-card__title {
@@ -284,79 +290,37 @@
     font-size: 14px;
     position: relative;
     left: 65px;
-    top: -25px;
+    top: -30px;
   }
 
   .about-card__subtitle {
     width: 200px;
     position: relative;
     left: 65px;
-    top: -25px;
+    top: -30px;
     font-size: 10px;
-    color: #9a9797;
   }
 
   .about__informations {
-    width: 1080px;
-    height: 100px;
-    margin: 70px 0;
-    align-self: center;
-    border: 1px solid #717070;
-    border-radius: 10px;
-    background-color: #1f1f1f;
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-  }
-
-  .informations {
-    width: 150px;
-    gap: 10px 20px;
-    justify-content: center;
-    align-content: center;
+    width: 300px;
+    height: 60px;
+    margin: 100px 0 0 0;
+    gap: 25px;
   }
 
   .informations-number {
-    margin: 0;
-    font-size: 32px;
-    justify-self: center;
+    font-size: 15px;
   }
 
   .informations-text {
-    margin: 0;
-    font-size: 16px;
-    justify-self: center;
+    font-size: 10px;
   }
 
-  .about__informations {
-    width: 255px;
-    height: 100px;
-    margin: 70px 0;
-    align-self: center;
-    border: 1px solid #717070;
-    border-radius: 10px;
-    background-color: #1f1f1f;
-    display: flex;
-    gap: 75px;
-    justify-content: center;
+  .about__list-elements {
+    font-size: 10px;
   }
 
-  .informations {
-    width: 150px;
-    gap: 10px 20px;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .informations-number {
-    margin: 0;
-    font-size: 32px;
-    justify-self: center;
-  }
-
-  .informations-text {
-    margin: 0;
-    font-size: 16px;
-    justify-self: center;
+  .about__list-icon {
+    width: 10px;
   }
 }

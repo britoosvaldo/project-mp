@@ -1,14 +1,14 @@
 .projects {
   background-color: #414141;
-  padding: 60px 0; /* Substituí height fixo por padding para melhor ajuste */
-  font-family: "Roboto", sans-serif;
+  font-family: "Saira", sans-serif;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  padding: 0 0 50px 0;
 }
 
 .projects__start {
-  margin: 30px 0;
+  margin: 40px 0 20px 0;
   display: flex;
   gap: 35px;
   justify-content: center;
@@ -23,7 +23,6 @@
 .projects__title {
   font-size: 35px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .projects__subtitle {
@@ -32,88 +31,192 @@
   text-align: center;
   align-self: center;
   font-size: 16px;
-  margin: 0 0 50px 0;
+  margin: 0 0 40px 0;
   line-height: 1.5;
 }
 
-/* --- Galeria Pinterest --- */
-
-.projects__gallery {
-  column-count: 4;
-  column-gap: 20px;
-  width: 90%;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.projects__item {
-  position: relative;
-  margin-bottom: 20px;
-  break-inside: avoid;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition:
-    transform 0.3s ease-in-out,
-    box-shadow 0.3s ease;
-}
-
-.projects__item:hover {
-  transform: scale(1.04);
-  z-index: 10;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-.projects__img {
+/* --- Grid Principal --- */
+.projects__grid {
+  display: grid;
+  align-self: center;
+  grid-template-columns: repeat(4, 300px); /* 4 colunas desktop */
+  gap: 20px;
+  width: 1260px;
   width: 100%;
-  display: block;
-  object-fit: cover;
+  margin: 0 20px;
 }
 
-/* --- Etiquetas e Informações (Estilo da Imagem) --- */
+.projects__card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #333;
+  height: 300px; /* Altura fixa definida aqui no CSS */
+  cursor: pointer;
+}
 
 .projects__tag {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #ffffff;
-  color: #333333;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
   z-index: 2;
+  background-color: #ffffff;
+  color: #414141;
+  padding: 5px 18px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 50px; /* Efeito Pílula */
+  letter-spacing: 0.5px;
 }
 
-.projects__info {
+.projects__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+  transition: transform 0.5s ease;
+}
+
+.projects__card:hover img {
+  transform: scale(1.1);
+}
+
+/* Info sobreposta (opcional) */
+.projects__card-info {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  padding: 25px 15px 15px;
+  width: 100%;
+  padding: 25px 20px;
+  /* Degradê sutil para o texto não sumir em fotos claras */
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.9);
+  gap: 12px;
+  color: #e0e0e0; /* Cinza claro conforme a imagem */
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.projects__dot {
-  font-size: 18px;
-  line-height: 0;
+/* Botão Ver Mais */
+.projects__button {
   align-self: center;
-  justify-self: center;
+  margin-top: 50px;
+  padding: 12px 40px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projects__button:hover {
+  background: white;
+  color: #414141;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  cursor: zoom-out; /* Indica que clicar fora fecha */
+}
+
+.modal__content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  background: #2a2a2a;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: default; /* Dentro do modal o cursor volta ao normal */
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__content img {
+  width: auto;
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain; /* Mostra a imagem inteira sem cortar */
+}
+
+.modal__details {
+  padding: 20px;
+  color: white;
+  background: #2a2a2a;
+}
+
+.modal__details h3 {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.modal__details p {
+  margin-top: 5px;
+  color: #bbb;
+}
+
+.modal__close {
+  position: absolute;
+  top: 90px;
+  right: 570px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.modal__close:hover {
+  color: #ddd;
 }
 
 /* --- Responsividade --- */
 
+/* Telas até 1150px (Notebooks) */
 @media (max-width: 1150px) {
-  .projects__gallery {
-    column-count: 2;
+  .projects__grid {
+    width: 640px;
+    align-self: center;
+    grid-template-columns: repeat(2, 300px); /* 2 colunas */
   }
+
   .projects__line {
-    display: none;
-  } /* Esconde as linhas em telas pequenas para poupar espaço */
+    width: 150px;
+  }
+}
+
+/* Telas até 650px (Mobile) */
+@media (max-width: 650px) {
+  .projects__grid {
+    width: 300px;
+    align-self: center;
+    grid-template-columns: 300px; /* 1 coluna */
+  }
+
+  .projects__start {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects__line {
+    width: 100px;
+  }
+
+  .projects__title {
+    font-size: 24px;
+    text-align: center;
+  }
 }

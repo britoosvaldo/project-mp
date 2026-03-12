@@ -57,3 +57,39 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 15px;
+    grid-template-areas:
+      "logo social"
+      "copyright copyright";
+  }
+
+  .footer__logo {
+    grid-area: logo;
+    align-items: center;
+
+    justify-self: center;
+  }
+
+  .footer__icon {
+    width: 80px;
+  }
+
+  .footer__description {
+    grid-area: copyright;
+    justify-self: center;
+    width: 280px;
+    align-items: center;
+  }
+
+  .footer__socialNetwork {
+    grid-area: social;
+    justify-self: center;
+  }
+}

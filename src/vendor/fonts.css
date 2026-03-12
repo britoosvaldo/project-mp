@@ -33,3 +33,15 @@
   font-family: "Roboto Slab";
   font-weight: bold;
 }
+
+@font-face {
+  src: url(./fonts/Saira-Regular.woff2) format(woff2);
+  font-family: "Saira";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(./fonts/ArchivoBlack-Regular.woff2) format(woff2);
+  font-family: "Archivo Black";
+  font-weight: normal;
+}
