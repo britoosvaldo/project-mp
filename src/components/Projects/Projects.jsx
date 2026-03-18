@@ -3,6 +3,9 @@ import { projectsData } from "../../data/projectsData.js";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 import line from "../../images/line.svg";
 
+// Você pode importar um ícone de fechar aqui se preferir,
+// ou usar o caractere × diretamente como fiz abaixo.
+
 export default function Projects() {
   const [visibleCount, setVisibleCount] = useState(4);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -14,6 +17,11 @@ export default function Projects() {
 
   const handleShowMore = () => {
     setVisibleCount(20);
+  };
+
+  // Função para fechar o modal limpando o projeto selecionado
+  const closeModal = () => {
+    setSelectedProject(null);
   };
 
   return (
@@ -54,8 +62,17 @@ export default function Projects() {
       )}
 
       {selectedProject && (
-        <div className="modal" onClick={() => setSelectedProject(null)}>
+        // Clicar no fundo do modal (overlay) também fecha
+        <div className="modal" onClick={closeModal}>
           <div className="modal__content" onClick={(e) => e.stopPropagation()}>
+            {/* Botão de fechar (X) adicionado aqui */}
+            <button
+              className="modal__close"
+              onClick={closeModal}
+              aria-label="Fechar modal"
+            >
+              &times; {/* Caractere HTML para o sinal de multiplicação (×) */}
+            </button>
             <img src={selectedProject.img} alt="Zoom" />
           </div>
         </div>
