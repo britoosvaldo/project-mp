@@ -155,10 +155,18 @@
   height: 42px;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .contacts__btn-icon {
   padding: 0 0 0 10px;
+}
+
+.contacts__btn--success {
+  background-color: #25d366 !important; /* Verde do WhatsApp */
+  color: white !important;
+  transform: scale(1.05); /* Dá um leve zoom */
+  cursor: default;
 }
 
 @media screen and (max-width: 1150px) {
