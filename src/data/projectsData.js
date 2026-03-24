@@ -1,11 +1,11 @@
-import photo1 from "../assets/photos/photo1.png";
-import photo2 from "../assets/photos/photo2.png";
-import photo5 from "../assets/photos/photo5.png";
-import photo6 from "../assets/photos/photo6.png";
-import photo7 from "../assets/photos/photo7.png";
-import photo8 from "../assets/photos/photo8.png";
-import photo9 from "../assets/photos/photo9.png";
-import photo10 from "../assets/photos/photo10.png";
+import photo1 from "../assets/photos/photo1.webp";
+import photo2 from "../assets/photos/photo2.webp";
+import photo5 from "../assets/photos/photo5.webp";
+import photo6 from "../assets/photos/photo6.webp";
+import photo7 from "../assets/photos/photo7.webp";
+import photo8 from "../assets/photos/photo8.webp";
+import photo9 from "../assets/photos/photo9.webp";
+import photo10 from "../assets/photos/photo10.webp";
 
 export const projectsData = [
   {
