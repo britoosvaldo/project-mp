@@ -7,8 +7,8 @@ export default function Main() {
   return (
     <main className="main" id="home">
       <h1 className="main__title " style={{ "--delay": "0ms" }}>
-        Do Projeto à Entrega
-        <br /> com <span>Engenharia de Verdade</span>
+        Construtora em Boa Vista —
+        <br /> Do Projeto à Entrega
       </h1>
       <p className="main__description">
         Projetos residenciais e comerciais com acompanhamento técnico do

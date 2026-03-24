@@ -214,7 +214,6 @@
   }
 
   .projects__start {
-    flex-direction: column;
     gap: 10px;
   }
 
@@ -223,7 +222,11 @@
   }
 
   .projects__title {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+  }
+
+  .projects__subtitle {
+    font-size: 12px;
   }
 }

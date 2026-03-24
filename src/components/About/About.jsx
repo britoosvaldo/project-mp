@@ -1,7 +1,7 @@
 import line from "../../images/line.svg";
-import targetIcon from "../../images/target-icon.svg";
-import eyeIcon from "../../images/eye-icon.svg";
-import heartIcon from "../../images/heart-icon.svg";
+import verifyIcon from "../../images/verify-icon.svg";
+import moneyIcon from "../../images/money-icon.svg";
+import dateIcon from "../../images/date-icon.svg";
 import arrowList from "../../images/arrow-list.svg";
 
 export default function About() {
@@ -80,7 +80,7 @@ export default function About() {
         </ul>
 
         <div className="about__card reveal" style={{ "--delay": "240ms" }}>
-          <img className="about-card__icon" src={targetIcon} alt="" />
+          <img className="about-card__icon" src={verifyIcon} alt="" />
           <h3 className="about-card__title">Responsabilidade Técnica</h3>
           <p className="about-card__subtitle">
             Toda obra com ART registrada e engenheiro responsável acompanhando
@@ -89,7 +89,7 @@ export default function About() {
         </div>
 
         <div className="about__card reveal" style={{ "--delay": "320ms" }}>
-          <img className="about-card__icon" src={eyeIcon} alt="" />
+          <img className="about-card__icon" src={moneyIcon} alt="" />
           <h3 className="about-card__title">Transparência no Orçamento</h3>
           <p className="about-card__subtitle">
             Orçamento detalhado com base no mercado local antes de começar. Sem
@@ -98,7 +98,7 @@ export default function About() {
         </div>
 
         <div className="about__card reveal" style={{ "--delay": "320ms" }}>
-          <img className="about-card__icon" src={heartIcon} alt="" />
+          <img className="about-card__icon" src={dateIcon} alt="" />
           <h3 className="about-card__title">Prazo com Cronograma Real</h3>
           <p className="about-card__subtitle">
             Cronograma definido em contrato com marcos de entrega que você
@@ -117,8 +117,8 @@ export default function About() {
           <p className="informations-text">construídos</p>
         </div>
         <div className="informations">
-          <p className="informations-number">14</p>
-          <p className="informations-text">pavimentos em construção</p>
+          <p className="informations-number">14 andares</p>
+          <p className="informations-text"> em construção</p>
         </div>
       </div>
     </section>
