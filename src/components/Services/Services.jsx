@@ -14,8 +14,8 @@ export default function Services() {
       </div>
 
       <p className="services__subtitle reveal">
-        Oferecemos soluções completas em engenharia civil, do projeto à entrega
-        das chaves, com foco em qualidade, prazo e custo-benefício.
+        Do projeto arquitetônico à entrega das chaves — engenharia com
+        responsável técnico em todas as etapas.
       </p>
 
       <div className="services__grid">

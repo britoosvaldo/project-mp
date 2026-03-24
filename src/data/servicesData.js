@@ -9,43 +9,43 @@ export const servicesData = [
   {
     id: 1,
     icon: helmetIcon,
-    title: "Execução de Obras",
+    title: "Construção Residencial",
     description:
-      "Construção completa de edificações residenciais e comerciais com acompanhamento técnico e especializado.",
+      "Casas e edifícios residenciais do zero, com projeto, execução e acabamento sob responsabilidade técnica de engenheiro.",
   },
   {
     id: 2,
-    icon: boardIcon,
-    title: "Gerenciamento de Obras",
+    icon: buildIcon,
+    title: "Construção Comercial e Industrial",
     description:
-      "Gestão profissional de cronograma, custos e qualidade para garantir o sucesso do seu projeto.",
+      "Galpões, lojas e edificações comerciais com estrutura dimensionada para sua operação e cronograma definido.",
   },
   {
     id: 3,
     icon: rulerIcon,
     title: "Projetos Arquitetônicos",
     description:
-      "Desenvolvimento de projetos personalizados que combinam estética, funcionalidade e viabilidade técnica.",
+      "Projetos personalizados que unem estética, funcionalidade e viabilidade técnica — prontos para aprovação e execução.",
   },
   {
     id: 4,
-    icon: graphicIcon,
-    title: "Orçamentos Detalhados",
+    icon: boardIcon,
+    title: "Gerenciamento de Obras",
     description:
-      "Elaboração de orçamentos precisos e transparentes para planejamento financeiro da sua obra.",
+      "Controle de cronograma, custos e qualidade da sua obra com relatórios e acompanhamento técnico do início ao fim.",
   },
   {
     id: 5,
-    icon: buildIcon,
-    title: "Manutenção",
+    icon: graphicIcon,
+    title: "Orçamentos e Viabilidade",
     description:
-      "Serviços preventivos e corretivos para garantir a longevidade e segurança da sua edificação.",
+      "Orçamento detalhado com base em tabelas SINAPI e análise de viabilidade técnica e financeira antes de construir.",
   },
   {
     id: 6,
     icon: hammerIcon,
-    title: "Reformas",
+    title: "Reformas e Ampliações",
     description:
-      "Modernização e revitalização de espaços existentes, mantendo qualidade estrutural e estética.",
+      "Modernização, ampliação e revitalização de imóveis existentes com projeto estrutural e acabamento de qualidade.",
   },
 ];

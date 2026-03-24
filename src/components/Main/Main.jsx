@@ -1,6 +1,3 @@
-import buildingIcon from "../../images/building-icon.svg";
-import rulerIcon from "../../images/ruler-icon.svg";
-import shieldIcon from "../../images/shield-icon.svg";
 import arrowIcon from "../../images/arrow-icon.svg";
 import useRevealOnScroll from "../../hooks/useRevealOnScroll";
 
@@ -10,13 +7,13 @@ export default function Main() {
   return (
     <main className="main" id="home">
       <h1 className="main__title " style={{ "--delay": "0ms" }}>
-        Construindo o Futuro
-        <br /> com Solidez
+        Do Projeto à Entrega
+        <br /> com <span>Engenharia de Verdade</span>
       </h1>
       <p className="main__description">
-        Especialista em construções residenciais e comerciais. Transformamos
-        projetos em realidade com compromisso, qualidade e resultados
-        excepcionais.
+        Projetos residenciais e comerciais com acompanhamento técnico do
+        engenheiro responsável em cada etapa. Do alicerce ao acabamento — sem
+        surpresas no orçamento.
       </p>
       <a
         href="#contacts"
@@ -37,19 +34,16 @@ export default function Main() {
       </a>
       <div className="main__highlights">
         <div className="highlights">
-          <img className="highlights--icon" src={buildingIcon} />
-          <p className="highlights--number">+100</p>
-          <p className="highlights--text">Obras entregues</p>
+          <p className="highlights--number">14 andares</p>
+          <p className="highlights--text">em construção</p>
         </div>
         <div className="highlights">
-          <img className="highlights--icon" src={rulerIcon} />
-          <p className="highlights--number">+50k</p>
-          <p className="highlights--text">m² construídos</p>
+          <p className="highlights--number">+7.500m²</p>
+          <p className="highlights--text">construídos</p>
         </div>
         <div className="highlights">
-          <img className="highlights--icon" src={shieldIcon} />
-          <p className="highlights--number">100%</p>
-          <p className="highlights--text">Satisfação</p>
+          <p className="highlights--number">7 obras</p>
+          <p className="highlights--text">simultâneas</p>
         </div>
       </div>
     </main>

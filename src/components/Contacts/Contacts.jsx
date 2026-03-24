@@ -27,7 +27,7 @@ export default function Contacts() {
             <img src={phoneIcon} alt="Phone Icon" />
             <p className="contacts__phone">
               Telefone <br />
-              <span>(95) 99999-9999</span>
+              <span>(95) 99122-8743</span>
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function Contacts() {
             <img src={mailIcon} alt="E-mail Icon" />
             <p className="contacts__mail">
               E-mail <br />
-              <span>contato@mpengenharia.com</span>
+              <span>mpengenhariaxxx@gmail.com</span>
             </p>
           </div>
 
@@ -44,8 +44,8 @@ export default function Contacts() {
             <p className="contacts__adress">
               Endereço <br />
               <span>
-                Rua Embaúba, 1000 - Paraviana <br />
-                Boa Vista - RR, 69300-000
+                Rua Genipapeiro, 263 - Caçari <br />
+                Boa Vista - RR, 69307-440
               </span>
             </p>
           </div>

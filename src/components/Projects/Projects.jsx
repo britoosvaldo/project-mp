@@ -33,8 +33,8 @@ export default function Projects() {
       </div>
 
       <p className="projects__subtitle reveal">
-        Oferecemos soluções completas em engenharia civil, do projeto à entrega
-        das chaves, com foco em qualidade, prazo e custo-benefício.
+        Obras reais em Boa Vista — do galpão industrial ao edifício de 14
+        andares.
       </p>
 
       <div className="projects__grid">

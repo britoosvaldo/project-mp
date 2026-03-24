@@ -18,15 +18,15 @@ export default function About() {
           Há mais de 5 anos construindo sonhos
         </h1>
         <p className="about__description reveal" style={{ "--delay": "160ms" }}>
-          A MP Engenharia nasceu da paixão por transformar projetos em
-          realidade. Com uma equipe experiente de engenheiros e arquitetos,
-          oferecemos soluções completas para construções residenciais e
-          comercias.
+          A MP Engenharia é uma construtora registrada no CREA-RR, atuando em
+          Boa Vista com foco em construções residenciais, comerciais e
+          industriais.
           <br />
           <br />
-          Nosso compromisso vai além da entrega: buscamos criar espaços que
-          melhorem a vida das pessoas, com segurança, qualidade e design único,
-          pensando em cada detalhe.
+          Hoje executamos 7 obras simultâneas, incluindo o Residencial Boa Vista
+          — um edifício de 14 pavimentos na fase de acabamento interno. Cada
+          obra tem acompanhamento direto do engenheiro responsável, cronograma
+          definido e orçamento transparente.
         </p>
         <ul className="about__list">
           <li className="about__list-elements">
@@ -35,7 +35,7 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Equipe técnica altamente qualificada
+            Registro ativo no CREA-RR
           </li>
           <li className="about__list-elements">
             <img
@@ -43,7 +43,7 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Materiais de primeira qualidade
+            ART emitida em todas as obras
           </li>
           <li className="about__list-elements">
             <img
@@ -51,7 +51,7 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Garantia estendida em todas as obras
+            Orçamento base de mercado local
           </li>
           <li className="about__list-elements">
             <img
@@ -59,7 +59,7 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Cumprimento rigoroso de prazos
+            Engenheiro presente em obra
           </li>
           <li className="about__list-elements">
             <img
@@ -67,7 +67,7 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Acompanhamento em tempo real
+            Cronograma contratual com marcos
           </li>
           <li className="about__list-elements">
             <img
@@ -75,50 +75,50 @@ export default function About() {
               src={arrowList}
               alt="Icone de Seta"
             />
-            Atendimento personalizado
+            Relatório fotográfico periódico
           </li>
         </ul>
 
         <div className="about__card reveal" style={{ "--delay": "240ms" }}>
           <img className="about-card__icon" src={targetIcon} alt="" />
-          <h3 className="about-card__title">Missão</h3>
+          <h3 className="about-card__title">Responsabilidade Técnica</h3>
           <p className="about-card__subtitle">
-            Entregar obras de excelência, dentro do prazo e orçamento, superando
-            as expectativas dos nossos clientes.
+            Toda obra com ART registrada e engenheiro responsável acompanhando
+            do início ao fim.
           </p>
         </div>
 
         <div className="about__card reveal" style={{ "--delay": "320ms" }}>
           <img className="about-card__icon" src={eyeIcon} alt="" />
-          <h3 className="about-card__title">Visão</h3>
+          <h3 className="about-card__title">Transparência no Orçamento</h3>
           <p className="about-card__subtitle">
-            Ser referência em construção civil, reconhecida pela qualidade,
-            inovação e compromisso com resultados.
+            Orçamento detalhado com base no mercado local antes de começar. Sem
+            surpresas no meio da obra.
           </p>
         </div>
 
         <div className="about__card reveal" style={{ "--delay": "320ms" }}>
           <img className="about-card__icon" src={heartIcon} alt="" />
-          <h3 className="about-card__title">Valores</h3>
+          <h3 className="about-card__title">Prazo com Cronograma Real</h3>
           <p className="about-card__subtitle">
-            Ética, transparência, comprometimento, qualidade e respeito ao
-            cliente e ao meio ambiente.
+            Cronograma definido em contrato com marcos de entrega que você
+            acompanha.
           </p>
         </div>
       </div>
 
       <div className="about__informations">
         <div className="informations">
-          <p className="informations-number">+5</p>
-          <p className="informations-text">anos de mercado</p>
+          <p className="informations-number">7 Obras</p>
+          <p className="informations-text">em execução simultânea</p>
         </div>
         <div className="informations">
-          <p className="informations-number">+100</p>
-          <p className="informations-text">projetos entregues</p>
+          <p className="informations-number">+7.500m²</p>
+          <p className="informations-text">construídos</p>
         </div>
         <div className="informations">
-          <p className="informations-number">+20</p>
-          <p className="informations-text">profissionais</p>
+          <p className="informations-number">14</p>
+          <p className="informations-text">pavimentos em construção</p>
         </div>
       </div>
     </section>
