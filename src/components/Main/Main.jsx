@@ -15,6 +15,7 @@ export default function Main() {
         engenheiro responsável em cada etapa. Do alicerce ao acabamento — sem
         surpresas no orçamento.
       </p>
+
       <a
         href="#contacts"
         onClick={() => setIsOpen(false)}

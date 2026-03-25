@@ -126,7 +126,7 @@
   }
 
   .main__description {
-    margin: 40px 0 0 50px;
+    margin: 40px 0 50px 50px;
     width: 262px;
     font-size: 14px;
   }
@@ -138,7 +138,7 @@
     align-items: center;
     width: 185px;
     height: 35px;
-    margin: 50px 0 0 0;
+    margin: 0 0 20px 0;
     font-size: 12px;
   }
 
@@ -149,7 +149,7 @@
     align-items: center;
     width: 185px;
     height: 35px;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     font-size: 12px;
   }
 
