@@ -114,43 +114,36 @@
 
 @media screen and (max-width: 650px) {
   .main {
-    height: 600px;
+    min-height: 100vh;
+    min-height: 100dvh;
     padding: 180px 0 0 0;
+    box-sizing: border-box;
     font-family: "Roboto";
   }
 
   .main__title {
     margin: 0 0 0 50px;
-    width: 262px;
-    font-size: 36px;
+    max-width: 262px;
+    font-size: 32px;
+    line-height: 1.05;
   }
 
   .main__description {
     margin: 40px 0 50px 50px;
     width: 262px;
     font-size: 14px;
+    line-height: 1.4;
   }
 
-  .main__bt-budget {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    width: 185px;
-    height: 35px;
-    margin: 0 0 20px 0;
-    font-size: 12px;
-  }
-
+  .main__bt-budget,
   .main__bt-projects {
     display: flex;
-    justify-self: center;
     justify-content: center;
     align-items: center;
     width: 185px;
     height: 35px;
-    margin: 0 0 0 0;
-    font-size: 12px;
+    margin: 20px auto;
+    font-size: 10px;
   }
 
   .main__highlights {
