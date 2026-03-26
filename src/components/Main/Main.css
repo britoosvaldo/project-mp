@@ -67,12 +67,7 @@
   flex-direction: column;
 }
 
-.highlights--icon {
-  grid-area: icon;
-  align-self: center;
-}
-
-.highlights--number {
+.highlights-number {
   grid-area: number;
   margin: 0;
   font-size: 32px;
@@ -80,7 +75,7 @@
   text-align: center;
 }
 
-.highlights--text {
+.highlights-text {
   grid-area: text;
   margin: 0;
   font-size: 16px;
@@ -151,20 +146,11 @@
     margin: 60px 0 0 0;
   }
 
-  .highlights {
-  }
-
-  .highlights--icon {
-    grid-area: icon;
-    align-self: center;
-    width: 25px;
-  }
-
-  .highlights--number {
+  .highlights-number {
     font-size: 16px;
   }
 
-  .highlights--text {
+  .highlights-text {
     font-size: 10px;
     width: 100px;
   }

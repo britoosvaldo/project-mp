@@ -35,16 +35,16 @@ export default function Main() {
       </a>
       <div className="main__highlights">
         <div className="highlights">
-          <p className="highlights--number">14 andares</p>
-          <p className="highlights--text">em construção</p>
+          <p className="highlights-number">14 andares</p>
+          <p className="highlights-text">em construção</p>
         </div>
         <div className="highlights">
-          <p className="highlights--number">+7.500m²</p>
-          <p className="highlights--text">construídos</p>
+          <p className="highlights-number">+7.500m²</p>
+          <p className="highlights-text">construídos</p>
         </div>
         <div className="highlights">
-          <p className="highlights--number">7 obras</p>
-          <p className="highlights--text">simultâneas</p>
+          <p className="highlights-number">7 obras</p>
+          <p className="highlights-text">simultâneas</p>
         </div>
       </div>
     </main>

@@ -110,7 +110,7 @@ export default function About() {
       <div className="about__informations">
         <div className="informations">
           <p className="informations-number">7 Obras</p>
-          <p className="informations-text">em execução simultânea</p>
+          <p className="informations-text">em execução</p>
         </div>
         <div className="informations">
           <p className="informations-number">+7.500m²</p>
