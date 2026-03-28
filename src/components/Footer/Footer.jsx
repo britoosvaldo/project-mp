@@ -19,7 +19,7 @@ export default function Footer() {
 
       <div className="footer__socialNetwork">
         <div className="footer__whats-icon">
-          <a href="">
+          <a href="#contacts">
             <HoverIcon
               firstColor={whatsIconGrey}
               secondColor={whatsIconWhite}
@@ -28,7 +28,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="footer__whats-icon">
-          <a href="">
+          <a href="https://www.instagram.com/mpengenhariarr/">
             <HoverIcon
               firstColor={instaIconGrey}
               secondColor={instaIconWhite}

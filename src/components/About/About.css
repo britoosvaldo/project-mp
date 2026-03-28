@@ -241,41 +241,34 @@
   }
 
   .about__grid {
-    margin: 0;
-    grid-template-columns: repeat(1, 315px);
-    grid-template-rows: repeat(6, 100px);
-    grid-template-areas:
-      "title"
-      "description"
-      "list"
-      "card"
-      "card"
-      "card";
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    justify-self: centers;
+    align-self: center;
   }
 
   .about__grid-title {
     font-size: 18px;
-    margin-bottom: 70px;
   }
 
   .about__description {
     font-size: 12px;
     line-height: 1.6;
-    margin: 20px 0 50px 0;
   }
 
   .about__list {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 5px;
-    padding: 30px 0;
+    margin: 0 0 20px 0;
   }
 
   .about__card {
     justify-self: center;
     width: 255px;
     height: 100px;
-    margin-top: 80px;
+    margin: 5px 0 0 0;
   }
 
   .about-card__icon {
@@ -313,7 +306,7 @@
   .about__informations {
     width: 340px;
     height: 80px;
-    margin: 90px 0 50px 0;
+    margin: 50px 0;
     gap: 20px;
   }
 
@@ -325,10 +318,10 @@
   }
 
   .informations-number {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .informations-text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
