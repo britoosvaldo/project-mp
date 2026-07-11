@@ -13,10 +13,6 @@ export default function Footer() {
         <img className="footer__icon" src={mpLogo} />
       </div>
 
-      <p className="footer__description">
-        2026 &copy; Desenvolvido por Osvaldo Brito
-      </p>
-
       <div className="footer__socialNetwork">
         <div className="footer__whats-icon">
           <a href="#contacts">

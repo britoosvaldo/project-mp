@@ -52,7 +52,7 @@ export default function Header() {
               Serviços
             </a>
           </li>
-          <li>
+          {/*<li>
             <a
               className="nav__link"
               href="#projects"
@@ -60,7 +60,7 @@ export default function Header() {
             >
               Projetos
             </a>
-          </li>
+          </li>*/}
           <li>
             <a
               className="nav__link"
